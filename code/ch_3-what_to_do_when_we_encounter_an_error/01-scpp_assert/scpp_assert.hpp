@@ -45,6 +45,7 @@ void SCPP_AssertErrorHandler(const char* file_name,
 #ifdef SCPP_TEST_ASSERT_ON
     #define SCPP_TEST_ASSERT(condition, msg) SCPP_ASSERT(condition, \
                                                          msg)       \
+
 #else
     #define SCPP_TEST_ASSERT(condition, msg) //do nothing
 #endif
